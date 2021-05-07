@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Demo</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+    </div>
+    <hr>
+    <div class="arow">
+      <div id="codehtml" class="code">&lt;!-- HTML --&gt;
+        
+&lt;div&nbsp;class="row"&gt;
+    &lt;div&nbsp;class="col"&gt;Column&lt;/div&gt;
+    &lt;div&nbsp;class="col"&gt;Column&lt;/div&gt;
+&lt;/div&gt;
+      </div>
+    <div class="code">/* CSS */
+        
+.row {
+    display: flex;  
+}
+.col {
+    flex: 1;
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 10px;
+}
+    </div>
+  </div>
+  <button onclick="addColumn()">Add Column</button>
+  <button onclick="removeColumn()">Remove Column</button>
+</body>
+</html>
